@@ -1,4 +1,4 @@
-#**Proyecto en Django**
+#**Proyecto en Django**#
 Proyecto en el framework de Python Django, puedes descargar los archivos existentes, sin embargo debes tener un entorno virtual para que funcione
 
 !warning
