@@ -20,5 +20,8 @@ from ClientesSF import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', views.helloWordl)
+    path('saludo/', views.helloWordl),
+    path('', views.pagina_inicio),
+    path('clientes/', views.clientes),
+    path('clientes/create/', views.create_clientes)
 ]
