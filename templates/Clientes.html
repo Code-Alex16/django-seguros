@@ -6,9 +6,30 @@
     <title>Clientes</title>
 </head>
 <body>
+    <h2>Clientes</h2>
     <table>
-        <!--Listar los campos para el encabezado -->
-        <!--Listado de las filas-->
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Ruc</td>
+                <td>email</td>
+                <td>direccion</td>
+                <td>telefono</td>
+                <td>Movil</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cliente in clientes %}
+                <tr>
+                    <td>{{cliente.name}}</td>
+                    <td>{{cliente.dni}}</td>
+                    <td>{{cliente.email}}</td>
+                    <td>{{cliente.address}}</td>
+                    <td>{{cliente.phone}}</td>
+                    <td>{{cliente.movil}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
     </table>
 </body>
 </html>
