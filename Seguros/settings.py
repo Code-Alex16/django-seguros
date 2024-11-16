@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ClientesSF.apps.ClientessfConfig'
+    'ClientesSF.apps.ClientessfConfig',
+    'Cotizacion.apps.CotizacionConfig',
+    'Ciudad.apps.CiudadConfig'
 ]
 
 MIDDLEWARE = [
