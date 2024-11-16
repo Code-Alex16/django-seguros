@@ -11,7 +11,7 @@ class Clientes(models.Model):
     avatar = models.ImageField(upload_to='avatar', verbose_name='foto cliente', null=True, blank=True)
     created = models.DateTimeField(auto_now=True, verbose_name='fecha de creacion')
     updated = models.DateTimeField(auto_now_add=True, verbose_name='fecha de modificacion')
-
+    
     class Meta:
         verbose_name = 'Cliente'
         verbose_name_plural = 'Clientes'
