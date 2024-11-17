@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 
 class Ciudad(models.Model):
-    province = models.CharField(max_length=20, verbose_name='Provincia')
-    name_city = models.CharField(max_length=20, verbose_name='Ciudad')
+    nombre = models.CharField(max_length=35, verbose_name='Ciudad', default='Manta')
+    codigo_postal = models.CharField(max_length=10, verbose_name='Codigo Postal')
 
     class Meta:
         verbose_name = 'Ciudad'
@@ -13,5 +13,5 @@ class Ciudad(models.Model):
         ordering = ['id']
 
     def __str__(self) -> str:
-        return self.name_city
+        return self.nombre
     
