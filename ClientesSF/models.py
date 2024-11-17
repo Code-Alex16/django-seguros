@@ -1,4 +1,5 @@
 from django.db import models
+from Ciudad.models import Ciudad
 
 # Create your models here.
 class Clientes(models.Model):
@@ -9,6 +10,7 @@ class Clientes(models.Model):
     phone = models.CharField(max_length=15,verbose_name='telefono')
     movil = models.CharField(max_length=15, verbose_name='celular')
     avatar = models.ImageField(upload_to='avatar', verbose_name='foto cliente', null=True, blank=True)
+    city = models.ForeignKey(to=Ciudad, verbose_name='Ciudad', on_delete= models.CASCADE, null= True, blank=True)
     created = models.DateTimeField(auto_now=True, verbose_name='fecha de creacion')
     updated = models.DateTimeField(auto_now_add=True, verbose_name='fecha de modificacion')
     
