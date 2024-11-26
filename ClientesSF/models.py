@@ -17,7 +17,7 @@ class Clientes(models.Model):
     class Meta:
         verbose_name = 'Cliente'
         verbose_name_plural = 'Clientes'
-        db_table = 'tbl_customers'
+        db_table = 'customers'
         ordering = ['id']
 
     def __str__(self) -> str:
